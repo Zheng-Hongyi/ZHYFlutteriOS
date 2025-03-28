@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     
     var _flutterViewController: FlutterViewController?
     var channel: FlutterBasicMessageChannel?
+    
+    var timer: Timer?
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -54,6 +56,12 @@ class ViewController: UIViewController {
                 }
             }
             
+        }
+        
+        // 4. 设置定时器发送消息到 Flutter（可选）
+        timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { _ in
+            self.channel?.sendMessage("Hello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from FlutterHello from Flutter") { reply in
+            }
         }
     }
 }

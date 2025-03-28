@@ -1,16 +1,29 @@
 PODS:
+  - Flutter (1.0.0)
+  - FlutterPluginRegistrant (0.0.1):
+    - Flutter
   - SnapKit (5.7.1)
 
 DEPENDENCIES:
+  - Flutter (from `../zhy_flutter_module/.ios/Flutter`)
+  - FlutterPluginRegistrant (from `../zhy_flutter_module/.ios/Flutter/FlutterPluginRegistrant`)
   - SnapKit
 
 SPEC REPOS:
   trunk:
     - SnapKit
 
+EXTERNAL SOURCES:
+  Flutter:
+    :path: "../zhy_flutter_module/.ios/Flutter"
+  FlutterPluginRegistrant:
+    :path: "../zhy_flutter_module/.ios/Flutter/FlutterPluginRegistrant"
+
 SPEC CHECKSUMS:
+  Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  FlutterPluginRegistrant: 31c463909264601dccf8080d30b71b19413ad188
   SnapKit: d612e99e678a2d3b95bf60b0705ed0a35c03484a
 
-PODFILE CHECKSUM: 4f4c859e707b735f57b00a6c65e3aee0b713fd5c
+PODFILE CHECKSUM: 84004974ce898910f73f6a29847118c331315fb7
 
 COCOAPODS: 1.16.2
